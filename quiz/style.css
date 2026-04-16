@@ -1,0 +1,151 @@
+/* General Reset and Body Styling */
+:root {
+    --primary-color: #6366f1;
+    --success-bg: #f0fdf4;
+    --success-text: #166534;
+    --success-border: #22c55e;
+    --error-bg: #fef2f2;
+    --error-text: #991b1b;
+    --error-border: #ef4444;
+    --bg-color: #f1f5f9;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.quiz-container {
+    max-width: 700px;
+    width: 100%;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.subtitle {
+    color: #64748b;
+}
+
+/* Card Styling for Questions */
+.quiz-card {
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid #e2e8f0; /* Default neutral border */
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.question-text {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #1e293b;
+}
+
+/* Options Styling */
+.option-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option {
+    display: block;
+    padding: 12px 15px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.option:hover {
+    background: #f1f5f9;
+    border-color: var(--primary-color);
+}
+
+.option input {
+    margin-right: 10px;
+}
+
+/* Post-Submission Validation States */
+
+/* 1. Correct Card State */
+.quiz-card.correct-card {
+    border-left-color: var(--success-border);
+    background-color: var(--success-bg);
+}
+.quiz-card.correct-card .question-text {
+    color: var(--success-text);
+}
+
+/* 2. Wrong Card State */
+.quiz-card.wrong-card {
+    border-left-color: var(--error-border);
+    background-color: var(--error-bg);
+}
+.quiz-card.wrong-card .question-text {
+    color: var(--error-text);
+}
+
+/* 3. Highlighting the Specific Correct Answer */
+.reveal-correct {
+    background-color: var(--success-border) !important;
+    color: white !important;
+    border-color: var(--success-border) !important;
+    font-weight: 600;
+}
+
+/* Submit and Result UI */
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #4f46e5;
+}
+
+.result-box {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    border: 2px solid var(--primary-color);
+}
+
+.reload-btn {
+    background: #cbd5e1;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}

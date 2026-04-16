@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteXL - Daily Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="quiz-container">
+        <header class="heading">
+            <h1 class="title">ByteXL-Quiz</h1>
+            <p class="subtitle">Test your Knowledge - Web Development</p>
+        </header>
+
+        <!-- Result Section -->
+        <div class="result-box hide">
+            <h2 id="score-text">You scored 0/6!</h2>
+            <button onclick="location.reload()" class="reload-btn">Try Again?</button>
+        </div>
+
+        <form class="quiz-form">
+            <!-- Question 1 -->
+            <div class="quiz-card" id="card-q1">
+                <p class="question-text">1. Which of the following is true about JavaScript?</p>
+                <div class="option-list">
+                    <label class="option"><input type="radio" name="q1" value="A"> It cannot manipulate HTML</label>
+                    <label class="option"><input type="radio" name="q1" value="B"> It is used only on server side</label>
+                    <label class="option"><input type="radio" name="q1" value="C"> It is an Object based scripting language</label>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="quiz-card" id="card-q2">
+                <p class="question-text">2. Which keyword is used to declare a block-scoped variable in ES6?</p>
+                <div class="option-list">
+                    <label class="option"><input type="radio" name="q2" value="A"> let</label>
+                    <label class="option"><input type="radio" name="q2" value="B"> let and const</label>
+                    <label class="option"><input type="radio" name="q2" value="C"> var</label>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="quiz-card" id="card-q3">
+                <p class="question-text">3. What does CSS stand for?</p>
+                <div class="option-list">
+                    <label class="option"><input type="radio" name="q3" value="A"> Cascading Style Sheets</label>
+                    <label class="option"><input type="radio" name="q3" value="B"> Creative Style System</label>
+                    <label class="option"><input type="radio" name="q3" value="C"> Computer Style Sheet</label>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="quiz-card" id="card-q4">
+                <p class="question-text">4. What is Flexbox primarily used for?</p>
+                <div class="option-list">
+                    <label class="option"><input type="radio" name="q4" value="A"> One-dimensional layouts</label>
+                    <label class="option"><input type="radio" name="q4" value="B"> Database management</label>
+                    <label class="option"><input type="radio" name="q4" value="C"> Server-side scripting</label>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="quiz-card" id="card-q5">
+                <p class="question-text">5. What does DOM stand for?</p>
+                <div class="option-list">
+                    <label class="option"><input type="radio" name="q5" value="A"> Document Object Model</label>
+                    <label class="option"><input type="radio" name="q5" value="B"> Data Object Mainframe</label>
+                    <label class="option"><input type="radio" name="q5" value="C"> Digital Object Map</label>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="quiz-card" id="card-q6">
+                <p class="question-text">6. Which HTML attribute provides alt-text for images?</p>
+                <div class="option-list">
+                    <label class="option"><input type="radio" name="q6" value="A"> title</label>
+                    <label class="option"><input type="radio" name="q6" value="B"> src</label>
+                    <label class="option"><input type="radio" name="q6" value="C"> alt</label>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Quiz</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
