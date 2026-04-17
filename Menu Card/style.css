@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+}
+
+/* Background */
+.bg {
+    min-height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1555396273-367ea4eb4db5");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card */
+.card {
+    width: 80%;
+    max-width: 700px;
+    background-color: rgba(255, 235, 235, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    text-align: center;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin: 15px 0;
+    color: darkred;
+    border-bottom: 2px solid darkred;
+    padding-bottom: 5px;
+}
+
+#search {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Menu items */
+.menu-item {
+    margin-bottom: 25px;
+}
+
+img {
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 150px;
+}
+
+/* Hover effect */
+.menu-item:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+}
