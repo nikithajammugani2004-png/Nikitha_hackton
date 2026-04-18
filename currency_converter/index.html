@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+
+    <div class="converter-card">
+        <h2>Currency Converter</h2>
+        
+        <div class="input-wrapper">
+            <div class="field">
+                <label>INR (Rupees)</label>
+                <div class="input-box">
+                    <span>₹</span>
+                    <input type="number" id="rupees" placeholder="0">
+                </div>
+            </div>
+
+            <div class="swap-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 16l-4-4m0 0l4-4m-4 4h18M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </div>
+
+            <div class="field">
+                <label>USD (Dollars)</label>
+                <div class="input-box">
+                    <span>$</span>
+                    <input type="number" id="dollars" placeholder="0">
+                </div>
+            </div>
+        </div>
+
+        <p class="rate-text">1 USD = 90.00 INR</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
