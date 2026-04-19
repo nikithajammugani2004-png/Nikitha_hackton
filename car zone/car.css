@@ -1,0 +1,125 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+    background-image: url("carzone.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0); /* Slight transparency for a modern look */
+    padding: 20px 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+.item {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.item li {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.item li:hover {
+    color: #0ea4e4;
+}
+
+/* Hero Section Styling */
+.text {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    /* Overlay ensures text is readable regardless of the image brightness */
+    background-image: url("image/carzone.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.text h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem); /* Adjusts size based on screen width */
+    max-width: 900px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 2px 4px 10px rgba(0,0,0,0.5);
+}
+
+.highlight-gold { color: #cb9f19; }
+.highlight-pink { color: #3dff02; }
+
+.text h2 {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: 300;
+    font-style: italic;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+/* Button Styling */
+button {
+    padding: 15px 45px;
+    background-color: #dd64cb;
+    color: #000;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+}
+
+button:hover {
+    transform: translateY(-3px) scale(1.05);
+    background-color: #9deb12;
+    box-shadow: 0 10px 20px rgba(157, 235, 18, 0.3);
+}
+
+/* Responsive Tweak for Mobile */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+    
+    .item {
+        gap: 15px;
+        font-size: 12px;
+    }
+}
