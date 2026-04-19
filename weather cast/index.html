@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast | Weather Dashboard</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="weather-container">
+
+    <!-- Search Card -->
+    <div class="search-card">
+        <h1>Sky<span>Cast</span></h1>
+
+        <div class="input-row">
+            <input type="number" id="latInput" placeholder="Latitude">
+            <input type="number" id="lonInput" placeholder="Longitude">
+        </div>
+
+        <div class="button-group">
+            <button onclick="getWeather()" class="main-btn">Get Weather</button>
+            <button onclick="getLocation()" class="geo-btn">📍</button>
+        </div>
+    </div>
+
+    <!-- Result Card -->
+    <div id="weatherResult" class="result-card hidden">
+        <h2 id="cityName">City Name</h2>
+
+        <div class="weather-icon">
+            <img id="weatherIcon" src="" alt="Weather Icon">
+        </div>
+
+        <div class="temp-display">
+            <span id="tempValue">0</span>°C
+        </div>
+
+        <div class="info-grid">
+            <div class="info-item">
+                <label>Wind</label>
+                <p id="windValue">0 km/h</p>
+            </div>
+
+            <div class="info-item">
+                <label>Condition</label>
+                <p id="weatherCode">Clear</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="loader" class="loader hidden"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
